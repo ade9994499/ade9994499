@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Portofolio Joko Sewu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Halo Dunia! Ini Website Portofolio Joko Sewu</h1>
-    <p>Sedang dalam proses pembangunan... Gasss!</p>
+    <audio id="background-music" loop preload="auto">
+        <source src="assets/DJ%20TRESNO%20TEKANE%20MATI%20NDX%20AKA%20VIRAL%20TIKTOK%20SLOW%20FULL%20SONG%20MAMAN%20FVNDY%202025%20-%20(320%20Kbps).mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+
+    <div class="birthday-animation" id="birthday-animation" aria-hidden="true"></div>
+
+    <button class="music-button" id="music-toggle" type="button" aria-label="Putar musik latar">
+        Putar Musik
+    </button>
+
+    <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="#home">Home</a>
+        <a href="#letter">Letter</a>
+        <a href="#memories">Memories</a>
+        <a href="#video">Video</a>
+    </nav>
+
+    <main>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">Birthday Memory Page</span>
+            <h1>Selamat Ulang Tahun, Nandini Ahmadin alias Pacarku yang paling manis! 👑</h1>
+            <p>16 September 2002 • <span id="age"></span> Years of Brightness</p>
+            <div class="countdown" id="countdown">Menghitung hari menuju hari spesialmu...</div>
+        </div>
+    </header>
+
+    <section class="message-section" id="letter">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">A small note</span>
+                <h2>Untuk Semesta Paling Indah ✨</h2>
+            </div>
+            <article class="letter-card">
+                <p class="love-letter">
+                    "Happy birthday sayang! 🥳 ga perlu kata-kata puitis yang panjang lebar,
+                    aku cuma mau bilang makasih ya udah jadi partner yang seru banget buat dilewatin hari-harinya.
+                    Makasih udah selalu jadi pendengar yang sabar dan temen debat yang asik buat aku.
+                    Semoga di umur yang baru ini, semua yang kamu mau pelan-pelan kecapai. I'm always rooting for you! 🎂✨"
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="memories">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-kicker">Selected memories</span>
+                <h2>Memori Kita 📸</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/IMG_0159.jpg" alt="Kenangan bersama Nandini 1">
+                    <p>Momen sederhana yang selalu jadi favorit.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/IMG_0365.JPG" alt="Kenangan bersama Nandini 2">
+                    <p>Senyum yang selalu bikin hari terasa lebih ringan.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/IMG_2726.jpg" alt="Kenangan bersama Nandini 3">
+                    <p>Potongan cerita kecil yang tidak pernah membosankan.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/IMG_2820.jpg" alt="Kenangan bersama Nandini 4">
+                    <p>Hari yang biasa saja, tapi jadi spesial karena kamu.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/IMG_0500.jpg" alt="Kenangan bersama Nandini 5">
+                    <p>Satu lagi alasan kenapa aku selalu kangen.</p>
+                </div>
+                <div class="gallery-item video-item" id="video">
+                    <video id="memory-video" controls playsinline poster="assets/IMG_0159.jpg">
+                        <source src="assets/copy_6070F1A3-3101-4DB1-BBC5-4ED64629DAF9.mp4" type="video/mp4">
+                        Browser kamu tidak mendukung video.
+                    </video>
+                    <p>Tawa yang selalu bikin kangen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>Dibuat dengan 💖 oleh Pacarmu | 2026</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
